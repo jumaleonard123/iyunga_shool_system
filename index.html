@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iyunga Secondary School</title>
+
+    <!-- UNGANISHO LA CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- HERO SECTION -->
+    <header class="hero-section">
+        <div class="hero-content">
+            <h1>WELCOME TO IYUNGA SECONDARY SCHOOL</h1>
+            <div class="hero-image-container">
+                <img src="images/download.jpg" alt="Iyunga Secondary School">
+            </div>
+            <p>Our school aims to provide life skills to students that will enable them to succeed.</p>
+            <a href="#about" class="hero-btn">Get Started</a>
+        </div>
+    </header>
+
+    <!-- NAVIGATION BAR -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#crud-section">Student Portal</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENT SECTIONS -->
+    <section id="home">
+        <h2>Home : Mbeya, Tanzania</h2>
+        <p>Welcome to Iyunga Secondary School for a better tomorrow. Our school aims to provide quality education to students that will enable them to reach their goals.</p>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Our team consists of skilled professionals with years of experience in technology and innovation.<br><br>
+        <strong>Location:</strong> Situated in Iyunga ward, Mbeya City, near the TAZARA railway station.<br>
+        <strong>Status:</strong> Government-owned, boys-only boarding school serving students up to Form VI.</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <p><strong>Advanced Level (Form V & VI):</strong> Features strong combinations focusing primarily on science and technology:</p>
+        <ul style="margin-left: 20px; margin-top: 10px; margin-bottom: 10px;">
+            <li><strong>PCM:</strong> Physics, Chemistry, Advanced Mathematics</li>
+            <li><strong>PCB:</strong> Physics, Chemistry, Biology</li>
+            <li><strong>PMC:</strong> Physics, Advanced Mathematics, Computer Science</li>
+        </ul>
+        <p><strong>National Examinations:</strong> Operating under NECTA school registration ID <strong>S0112</strong>, the institution consistently registers students for both CSEE (Form IV) and ACSEE (Form VI) examinations.</p>
+    </section>
+
+    <!-- CRUD SIMULATION SECTION -->
+    <section id="crud-section">
+        <h2>Student Management System</h2>
+        <div class="crud-container">
+            <form id="studentForm" class="form-grid">
+                <input type="hidden" id="studentId">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name:</label>
+                    <input type="text" id="fullname" required placeholder="e.g., John Doe">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" required placeholder="e.g., john@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" required placeholder="e.g., +255 700 000 000">
+                </div>
+
+                <div class="form-group">
+                    <label for="course">Select Combination / Course:</label>
+                    <select id="course" required>
+                        <option value="">-- Select Combination --</option>
+                        <option value="PCM">PCM (Physics, Chemistry, Math)</option>
+                        <option value="PCB">PCB (Physics, Chemistry, Biology)</option>
+                        <option value="PMC">PMC (Physics, Math, Computer)</option>
+                        <option value="Computer Science">Computer Science</option>
+                    </select>
+                </div>
+
+                <div class="form-group full-width">
+                    <div class="btn-group">
+                        <button type="submit" id="btnSubmit" class="btn btn-submit">Save Student (Create)</button>
+                        <button type="button" id="btnCancel" class="btn btn-cancel">Cancel Edit</button>
+                    </div>
+                </div>
+            </form>
+
+            <h3 style="margin-bottom: 15px; color: #1b365d;">Registered Students List</h3>
+            <div class="table-responsive">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Full Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Course / Combo</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentTableBody">
+                        <!-- Populated by JavaScript -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- SCHOOL GALLERY -->
+    <section id="gallery">
+        <h2>School Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="images/images.jpg" alt="Students">
+                <h3>Our Students</h3>
+                <p>Students of Iyunga Secondary School.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/mmm.jpg" alt="School environment">
+                <h3>School Environment</h3>
+                <p>Our school campus facilities.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/vvv.jpg" alt="Classroom">
+                <h3>Classroom</h3>
+                <p>Interactive classroom learning.</p>
+            </div>
+            <div class="gallery-item">
+                <img src="images/sss.jpg" alt="Activities">
+                <h3>School Activities</h3>
+                <p>Extracurricular activities.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>
+            <strong>Mobile:</strong> +255 024 3654<br>
+            <strong>Email:</strong> info@iyunga.ac.tz<br>
+            <strong>Address:</strong> P.O. BOX 32145 IYUNGA, MBEYA
+        </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; IYUNGA SECONDARY SCHOOL | THE SCHOOL WITH EXCELLENT SERVICES<br>
+        <a href="https://www.iyunga.tz" style="color: #63a0c4;">WWW.IYUNGA.TZ</a></p>
+    </footer>
+
+    <!-- UNGANISHO LA JAVASCRIPT -->
+    <script src="script.js"></script>
+</body>
+</html>
